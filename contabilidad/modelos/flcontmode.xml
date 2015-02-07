@@ -153,50 +153,6 @@
         <scriptform>co_masterpartidas303</scriptform>
     </action>
     <action>
-        <name>co_modelo340</name>
-        <description>El modelo 340 recoge la información relativa a las operaciones de IVA de la empresa.</description>
-        <alias>QT_TRANSLATE_NOOP("MetaData","Modelo 340")</alias>
-        <table>co_modelo340</table>
-        <form>co_mastermodelo</form>
-        <scriptform>co_mastermodelo340</scriptform>
-        <formrecord>co_modelo340</formrecord>
-        <scriptformrecord>co_modelo340</scriptformrecord>
-    </action>
-    <action>
-        <name>co_facturasemi340</name>
-        <description>Facturas emitidas incluidas en el modelo 340.</description>
-        <alias>QT_TRANSLATE_NOOP("MetaData","Facturas emitidas")</alias>
-        <table>co_facturasemi340</table>
-        <form>co_mastermodelo</form>
-        <formrecord>co_facturasemi340</formrecord>
-        <scriptformrecord>co_facturasemi340</scriptformrecord>
-    </action>
-    <action>
-        <name>co_facturasrec340</name>
-        <description>Facturas recibidas incluidas en el modelo 340.</description>
-        <alias>QT_TRANSLATE_NOOP("MetaData","Facturas recibidas")</alias>
-        <table>co_facturasrec340</table>
-        <form>co_mastermodelo</form>
-        <formrecord>co_facturasrec340</formrecord>
-        <scriptformrecord>co_facturasrec340</scriptformrecord>
-    </action>
-    <action>
-        <name>co_bienesinv340</name>
-        <description>Bienes de inversión incluidos en el modelo 340.</description>
-        <alias>QT_TRANSLATE_NOOP("MetaData","Bienes inversión")</alias>
-        <table>co_bienesinv340</table>
-        <form>co_mastermodelo</form>
-        <formrecord>co_bienesinv340</formrecord>
-    </action>
-    <action>
-        <name>co_opintracomunitarias340</name>
-        <description>Operaciones intracomunitarias incluidas en el modelo 340.</description>
-        <alias>QT_TRANSLATE_NOOP("MetaData","Operaciones intracomunitarias")</alias>
-        <table>co_opintracomunitarias340</table>
-        <form>co_mastermodelo</form>
-        <formrecord>co_opintracomunitarias340</formrecord>
-    </action>
-    <action>
         <name>co_identifpaisresidencia</name>
         <description>Clave de identificación en el país de residencia</description>
         <alias>QT_TRANSLATE_NOOP("MetaData","Indentificación en el pais de residencia")</alias>
@@ -219,13 +175,6 @@
         <table>co_claveoperacion</table>
         <form>master</form>
         <formrecord>co_claveoperacion</formrecord>
-    </action>
-    <action>
-        <name>busmod340</name>
-        <description>QT_TRANSLATE_NOOP("MetaData","Búsqueda de Modelo 340 Presentados")</description>
-        <alias>QT_TRANSLATE_NOOP("MetaData","Modelo 340")</alias>
-        <table>co_modelo340</table>
-        <form>master</form>
     </action>
     <action>
         <name>co_modelo031</name>

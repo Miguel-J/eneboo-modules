@@ -129,26 +129,12 @@ class modelo349 extends modelo390 {
 /////////////////////////////////////////////////////////////////
 
 
-/** @class_declaration modelo340 */
-/////////////////////////////////////////////////////////////////
-//// MODELO 340 /////////////////////////////////////////////////
-class modelo340 extends modelo349 {
-	function modelo340( context ) { modelo349 ( context ); }
-	function init() {
-		return this.ctx.modelo340_init();
-	}
-	function rellenarTablasModelo340() {
-		return this.ctx.modelo340_rellenarTablasModelo340();
-	}
-}
-//// MODELO 340 /////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////
 
 /** @class_declaration modelo031 */
 /////////////////////////////////////////////////////////////////
 //// MODELO031 //////////////////////////////////////////////////
-class modelo031 extends modelo340 {
-    function modelo031( context ) { modelo340 ( context ); }
+class modelo031 extends modelo349 {
+    function modelo031( context ) { modelo349 ( context ); }
     function beforeCommit_co_modelo031(curModelo:FLsqlCursor):Boolean{
         return this.ctx.modelo031_beforeCommit_co_modelo031(curModelo);
     }
@@ -916,73 +902,6 @@ function modelo349_formatoAlfanumerico349(texto:String):String
         return resultado;
 }
 //// MODELO 349 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-/** @class_definition modelo340 */
-/////////////////////////////////////////////////////////////////
-//// MODELO 340 /////////////////////////////////////////////////
-function modelo340_init()
-{
-	this.iface.__init();
-
-	var util:FLUtil = new FLUtil();
-	var cursor:FLSqlCursor = new FLSqlCursor("co_identifpaisresidencia");
-	cursor.select();
-	if (!cursor.first()) {
-		var res:Number = MessageBox.information(util.translate("scripts","Insertar tablas para el modelo 340."),MessageBox.Yes, MessageBox.No);
-		if (res != MessageBox.Yes) {
-			return false;
-		} else {
-			this.iface.rellenarTablasModelo340();
-		}
-	}
-}
-
-function modelo340_rellenarTablasModelo340()
-{
-	var util:FLUtil = new FLUtil();
-	var cursor:FLSqlCursor = new FLSqlCursor("co_identifpaisresidencia");
-	var clavePaisResidencia:Array =
-		[["1", "Corresponde a un NIF"],["2", "Se consigna el NIF/IVA (NIF OPERADOR INTRACOMUNITARIO)"],["3", "Pasaporte"],["4", "Documento oficial de identificación expedido por el país o territorio de residencia"],["5", "Certificado de residencia fiscal"],["6", "Otro documento probatorio"]];
-	for (var i:Number = 0; i < clavePaisResidencia.length; i++) {
-		with(cursor) {
-			setModeAccess(cursor.Insert);
-			refreshBuffer();
-			setValueBuffer("codigo", clavePaisResidencia[i][0]);
-			setValueBuffer("descripcion", clavePaisResidencia[i][1]);
-			commitBuffer();
-		}
-	}
-
-	var cursor:FLSqlCursor = new FLSqlCursor("co_tipolibro");
-	var tipoLibro:Array =
-		[["E", "Libro registro de facturas expedidas"],["I", "Libro registro de bienes de inversión"],["R", "Libro registro de facturas recibidas"],["U", "Libro registro de determinadas operaciones intracomunitarias"],["F", "Libro registro de facturas expedidas IGIC"],["J", "Libro de registro de bienes de inversión IGIC"],["S", "Libro de registro de facturas recibidas IGIC"]];
-	for (var i:Number = 0; i < tipoLibro.length; i++) {
-		with(cursor) {
-			setModeAccess(cursor.Insert);
-			refreshBuffer();
-			setValueBuffer("codigo", tipoLibro[i][0]);
-			setValueBuffer("descripcion", tipoLibro[i][1]);
-			commitBuffer();
-		}
-	}
-
-	var cursor:FLSqlCursor = new FLSqlCursor("co_claveoperacion");
-	var claveOperacion:Array =
-		[["A", "Asiento resumen de facturas"],["B", "Asiento resumen de tique"],["C", "Factura con varios asientos (varios tipos impositivos)"],["D", "Factura rectificativa"],["F", "Adquisiciones realizadas por las agencias de viajes directamente en interés del viajero (Régimen especial de agencias de viajes)"],["G", "Régimen especial de grupo de entidades en IVA o IGIC (Incorpora la contraprestación real a coste)"],["H", "Régimen especial de oro de inversión"],["I", "Inversión del sujeto pasivo (ISP)"],["J", "Tiques"],["K", "Rectificación de errores registrales"],["L", "Adquisiciones a comerciantes minoristas del IGIC. Ninguna de las anteriores"]];
-	for (var i:Number = 0; i < claveOperacion.length; i++) {
-		with(cursor) {
-			setModeAccess(cursor.Insert);
-			refreshBuffer();
-			setValueBuffer("codigo", claveOperacion[i][0]);
-			setValueBuffer("descripcion", claveOperacion[i][1]);
-			commitBuffer();
-		}
-	}
-}
-
-//// MODELO 340 /////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////
 
 /** @class_definition modelo031 */
 /////////////////////////////////////////////////////////////////
