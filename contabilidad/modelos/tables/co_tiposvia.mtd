@@ -20,12 +20,6 @@
 		</relation>
 		
 		<relation>
-			<table>co_modelo347_registro2i</table>
-			<field>codtipovia</field>
-			<card>1M</card>
-		</relation>
-		
-		<relation>
 			<table>co_modelo349</table>
 			<field>codtipoviapres</field>
 			<card>1M</card>
