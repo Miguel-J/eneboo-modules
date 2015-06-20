@@ -43,6 +43,6 @@
 	</where>
 	
 	<order>
-		lineaspresupuestoscli.referencia
+		lineaspresupuestoscli.idlinea
 	</order>
 </QRY>

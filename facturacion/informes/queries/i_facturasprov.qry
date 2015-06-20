@@ -38,6 +38,6 @@
 	</where>
 	
 	<order>
-		lineasfacturasprov.idalbaran, lineasfacturasprov.referencia
+		lineasfacturasprov.idalbaran, lineasfacturasprov.idlinea
 	</order>
 </QRY>

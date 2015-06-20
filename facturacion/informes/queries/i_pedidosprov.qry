@@ -42,6 +42,6 @@
 	</where>
 	
 	<order>
-		lineaspedidosprov.referencia
+		lineaspedidosprov.idlinea
 	</order>
 </QRY>

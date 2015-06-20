@@ -50,6 +50,6 @@
 	</where>
 	
 	<order>
-		albaranescli.idalbaran,lineasalbaranescli.idpedido,lineasalbaranescli.referencia
+		albaranescli.idalbaran,lineasalbaranescli.idpedido,lineasalbaranescli.idlinea
 	</order>
 </QRY>
