@@ -733,27 +733,26 @@ function oficial_valoresIniciales()
 {
 	var cursor:FLSqlCursor = new FLSqlCursor("bancos");
 	var bancos:Array =
-		[["0030", "BANESTO"],["0112", "BANCO URQUIJO"],
-		["2085", "IBERCAJA"],["0093", "BANCO DE VALENCIA"],
-		["2059", "CAIXA SABADELL"],["2073", "CAIXA TARRAGONA"],
-		["2038", "CAJA MADRID"],["2091", "CAIXA GALICIA"],
-		["0019", "DEUTSCHE BANK"],["0081", "BANCO DE SABADELL"],
-		["0049", "BANCO SANTANDER CENTRAL HISPANO"],["0072", "BANCO PASTOR"],
-		["0075", "BANCO POPULAR"],["0182","BANCO BILBAO VIZCAYA ARGENTARIA"],
-		["0128", "BANKINTER"],["2090", "C.A.M."],["2100", "LA CAIXA"],
-		["2077", "BANCAJA"],["0008", "BANCO ATLANTICO"],
-		["0061", "BANCA MARCH"],["0065", "BARCLAYS BANK"],
-		["0073", "PATAGON INTERNET BANK"],["0103", "BANCO ZARAGOZANO"],
-		["2013", "CAIXA CATALUNYA"],["2043","CAJA MURCIA"],
-		["2103", "UNICAJA"],["2105", "CAJA DE CASTILLA LA MANCHA"],
-		["0042", "BANCO GUIPUZCOANO"],["0138", "BANKOA"],
-		["3056", "CAJA RURAL DE ALBACETE"]];
+		[["0049", "BANCO SANTANDER", "BSCHESMM"],
+		["0075", "BANCO POPULAR", "POPUESMM"],
+		["0081", "BANCO DE SABADELL", "BSABESBB"],
+		["0128", "BANKINTER", "BKBKESMM"],
+		["0182","BBVA", "BBVAESMM"],
+		["0487","BANCO MARE NOSTRUM", "GNMNESMM"],
+		["2038", "BANKIA", "CAHMESMM"],
+		["2048", "LIBERBANK", "CECAESMM"],
+		["2080", "ABANCA", "CAGLESMM"],
+		["2085", "IBERCAJA", "CAZRES2Z"],
+		["2095","KUTXABANK", "BASKES2B"],
+		["2100", "CAIXABANK", "CAIXESBB"],
+		["2103", "UNICAJA", "UCJAES2M"]];
 	for (var i:Number = 0; i < bancos.length; i++) {
 		with(cursor) {
 			setModeAccess(cursor.Insert);
 			refreshBuffer();
 			setValueBuffer("entidad", bancos[i][0]);
 			setValueBuffer("nombre", bancos[i][1]);
+			setValueBuffer("bic", bancos[i][2]);
 			commitBuffer();
 		}
 	}
