@@ -152,10 +152,10 @@
                 <iconset>image30770</iconset>
             </property>
             <property name="text">
-                <string>&amp;Situación</string>
+                <string>&amp;Situación (PGC-1990)</string>
             </property>
             <property name="menuText">
-                <string>&amp;Situación</string>
+                <string>&amp;Situación (PGC-1990)</string>
             </property>
             <property name="toolTip">
                 <string>Situación</string>
@@ -172,10 +172,10 @@
                 <iconset>image175</iconset>
             </property>
             <property name="text">
-                <string>&amp;Pérdidas y Ganacias</string>
+                <string>&amp;Pérdidas y Ganacias (PGC-1990)</string>
             </property>
             <property name="menuText">
-                <string>&amp;Pérdidas y Ganacias</string>
+                <string>&amp;Pérdidas y Ganacias (PGC-1990)</string>
             </property>
             <property name="toolTip">
                 <string>Pérdidas y Ganacias</string>
