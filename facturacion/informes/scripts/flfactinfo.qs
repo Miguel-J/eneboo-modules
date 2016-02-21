@@ -477,7 +477,7 @@ Lanza un informe
 @param        orderBy: Cláusula ORDER BY de la consulta base
 @param        groupBy: Cláusula GROUP BY de la consulta base
 @param        etiquetas: Indicador de si se trata de un informe de etiquetas
-@param        impDirecta: Indicador para imprimir directaemnte el informe, sin previsualización
+@param        impDirecta: Indicador para imprimir directamente el informe, sin previsualización
 @param        whereFijo: Sentencia where que debe preceder a la sentencia where calculada por la función
 \end */
 function oficial_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, orderBy:String, groupBy:String, etiquetas:Boolean, impDirecta:Boolean, whereFijo:String, nombreReport:String, numCopias:Number, impresora:String, pdf:Boolean)
