@@ -1,0 +1,53 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>ps_categorias</name>
+		<!-- Listado de categorias de artículos -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Categorias")</alias>
+
+	<field>
+		<name>id</name>
+		<!-- Código de la familia -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>11</length>
+	</field>
+
+	<field>
+		<name>id_parent</name>
+		<!-- Código de la familia -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>11</length>
+	</field>
+
+	<field>
+		<name>name</name>
+		<!-- Código de la familia -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","id")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+	</field>
+	<field>
+		<name>active</name>
+		<!-- Código de la familia -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","id")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>1</length>
+	</field>
+</TMD>
