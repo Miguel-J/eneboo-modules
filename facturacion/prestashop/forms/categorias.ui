@@ -1,9 +1,9 @@
 <!DOCTYPE UI>
 <UI version="3.3" stdsetdef="1">
-<class>formFamilias</class>
+<class>formCategorias</class>
 <widget class="QWidget">
     <property name="name">
-        <cstring>formFamilias</cstring>
+        <cstring>formCategorias</cstring>
     </property>
     <property name="geometry">
         <rect>
@@ -22,7 +22,7 @@
         </sizepolicy>
     </property>
     <property name="caption">
-        <string>Familias</string>
+        <string>Categorias</string>
     </property>
     <vbox>
         <property name="name">
@@ -36,7 +36,7 @@
         </property>
         <widget class="QFrame">
             <property name="name">
-                <cstring>frmFamilia</cstring>
+                <cstring>frmCategoria</cstring>
             </property>
             <property name="frameShape">
                 <enum>GroupBoxPanel</enum>
@@ -58,7 +58,7 @@
                         </property>
                         <widget class="FLFieldDB">
                             <property name="name">
-                                <cstring>fdbCodFamilia</cstring>
+                                <cstring>fdbCodCategoria</cstring>
                             </property>
                             <property name="sizePolicy">
                                 <sizepolicy>
@@ -81,7 +81,7 @@
                                 </size>
                             </property>
                             <property name="fieldName">
-                                <string>codfamilia</string>
+                                <string>codCategoria</string>
                             </property>
                         </widget>
                         <spacer>
@@ -387,13 +387,13 @@
                             </font>
                         </property>
                         <property name="tableName">
-                            <string>articulos</string>
+                            <string>ps_articuloscategoria</string>
                         </property>
                         <property name="foreignField">
-                            <string>codfamilia</string>
+                            <string>idcat</string>
                         </property>
                         <property name="fieldRelation">
-                            <string>codfamilia</string>
+                            <string>idcat</string>
                         </property>
                     </widget>
                 </vbox>
@@ -451,3 +451,4 @@
     <includehint>flfielddb.h</includehint>
 </includehints>
 </UI>
+
