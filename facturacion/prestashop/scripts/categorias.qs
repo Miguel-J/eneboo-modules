@@ -85,6 +85,8 @@ function interna_init()
 	var cursor:FLSqlCursor = this.cursor();
 
 	connect(cursor, "bufferChanged(QString)", this, "iface.bufferChanged");
+
+	this.iface.bufferChanged("seactivo");
 }
 
 function interna_calculateField(nombreCampo:String):String
@@ -109,7 +111,6 @@ function oficial_bufferChanged(fN:String)
 	
 	switch (fN) {
 		case "": {
-			
 			break;
 		}
 	}
