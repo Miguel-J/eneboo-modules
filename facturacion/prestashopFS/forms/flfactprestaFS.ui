@@ -52,7 +52,7 @@
     <property name="defaultUp">
         <bool>false</bool>
     </property>
-    <item text="Prestashop" name="Prestashop">
+    <item text="PrestashopFS" name="PrestashopFS">
         <action name="wg_widget"/>
         <action name="categorias"/>
         <action name="fabricantes"/>
