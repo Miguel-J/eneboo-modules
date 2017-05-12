@@ -1,7 +1,7 @@
 <!DOCTYPE TMD>
 <TMD>
 	<name>fabricantes</name>
-		<!-- Listado de familias de artículos -->
+		<!-- Listado de fabricantes de artículos -->
 	<alias>QT_TRANSLATE_NOOP("MetaData","Fabricantes")</alias>
 
 	<field>

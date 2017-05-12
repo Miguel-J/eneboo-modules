@@ -44,7 +44,7 @@
 		<name>description</name>
 		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción de la Categoría")</alias>
 		<pk>false</pk>
-		<type>text</type>
+		<type>string</type>
 	</field>
 
 	<field>
