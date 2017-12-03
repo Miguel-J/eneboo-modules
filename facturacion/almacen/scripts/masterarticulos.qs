@@ -262,7 +262,7 @@ function oficial_copiarTablaTarifas(refOriginal:String, nuevaReferencia:String):
 
 	var curTarifaOrigen:FLSqlCursor = new FLSqlCursor("articulostarifas");
 	curTarifaOrigen.select("referencia = '" + refOriginal + "'");
-	while (this.iface.curTarifa.next()) {
+	while (curTarifaOrigen.next()) {
 		this.iface.curTarifa.setModeAccess(this.iface.curTarifa.Insert);
 		this.iface.curTarifa.refreshBuffer();
 		this.iface.curTarifa.setValueBuffer("referencia", nuevaReferencia);
