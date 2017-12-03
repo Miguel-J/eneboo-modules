@@ -94,10 +94,10 @@
             <iconset>image65020</iconset>
         </property>
         <property name="text">
-            <string>Categorias</string>
+            <string>Categorias en FS</string>
         </property>
         <property name="menuText">
-            <string>Categorias</string>
+            <string>Categorias en FS</string>
         </property>
         <property name="toolTip">
             <string>Categorias (Ctrl+F)</string>
@@ -117,10 +117,10 @@
             <iconset>image65020</iconset>
         </property>
         <property name="text">
-            <string>Fabricantes</string>
+            <string>Fabricantes en FS</string>
         </property>
         <property name="menuText">
-            <string>Fabricantes</string>
+            <string>Fabricantes en FS</string>
         </property>
         <property name="toolTip">
             <string>Fabricantes (Ctrl+F)</string>

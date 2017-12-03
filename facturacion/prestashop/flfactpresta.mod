@@ -7,5 +7,8 @@
 <version>232</version>
 <icon>flfactpresta.xpm</icon>
 <flversion>232</flversion>
-<description>flfactpresta</description>
+	<dependencies>
+		<dependency>flfactppal</dependency>
+	</dependencies>
+<description>El módulo de Prestashop incluye las funcionalidades de las tablas de categorias, fabricantes y su sincronización</description>
 </MODULE>

@@ -114,7 +114,7 @@
                             </size>
                         </property>
                         <property name="fieldName">
-                            <string>id</string>
+                            <string>id_supplier</string>
                         </property>
                     </widget>
                     <spacer>
@@ -160,7 +160,7 @@
             </widget>
             <widget class="QLabel">
                 <property name="name">
-                    <cstring>FABRICANTE_PADRE:</cstring>
+                    <cstring>FECHAS_FABRICANTE:</cstring>
                 </property>
                 <property name="geometry">
                     <rect>
@@ -171,7 +171,7 @@
                     </rect>
                 </property>
                 <property name="text">
-                    <string>FABRICANTE_PADRE:</string>
+                    <string>FECHAS_FABRICANTE:</string>
                 </property>
             </widget>
             <spacer>
@@ -223,7 +223,7 @@
             </widget>
             <widget class="FLFieldDB">
                 <property name="name">
-                    <cstring>fdbFabricante_padre_cod</cstring>
+                    <cstring>fdbFecha_creacion</cstring>
                 </property>
                 <property name="geometry">
                     <rect>
@@ -254,18 +254,18 @@
                     </size>
                 </property>
                 <property name="fieldName">
-                    <string>id_parent</string>
+                    <string>date_add</string>
                 </property>
             </widget>
             <widget class="FLFieldDB">
                 <property name="name">
-                    <cstring>fdbFabricante_padre_des</cstring>
+                    <cstring>fdbFecha_cambio</cstring>
                 </property>
                 <property name="geometry">
                     <rect>
-                        <x>210</x>
+                        <x>200</x>
                         <y>160</y>
-                        <width>440</width>
+                        <width>150</width>
                         <height>24</height>
                     </rect>
                 </property>
@@ -279,15 +279,18 @@
                 </property>
                 <property name="minimumSize">
                     <size>
-                        <width>16</width>
+                        <width>38</width>
                         <height>24</height>
                     </size>
                 </property>
-                <property name="fieldName">
-                    <string>description</string>
+                <property name="maximumSize">
+                    <size>
+                        <width>150</width>
+                        <height>32767</height>
+                    </size>
                 </property>
-                <property name="tableName">
-                    <string>fabricantes</string>
+                <property name="fieldName">
+                    <string>date_upd</string>
                 </property>
             </widget>
         </widget>
