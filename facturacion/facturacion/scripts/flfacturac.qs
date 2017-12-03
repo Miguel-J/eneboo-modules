@@ -1970,7 +1970,7 @@ function oficial_datosConceptoAsiento(cur:FLSqlCursor):Array
 			var nombreCli:String = util.sqlSelect("reciboscli", "nombrecliente", "idrecibo = " + cur.valueBuffer("idrecibo"));
 
 			if (cur.valueBuffer("tipo") == "Pago") {
-				datosAsiento.concepto = "Cobro recibo " + codRecibo + " - " + nombreCli;
+				datosAsiento.concepto = "Cobro recibo " + codRecibo + " - cliente " + nombreCli;
 			} else {
 				datosAsiento.concepto = "Devolución recibo " + codRecibo;
 			}
